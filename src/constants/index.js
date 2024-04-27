@@ -1,6 +1,7 @@
 import {
     Arduino,
     Blender,
+    Blogger,
     CMake,
     Contact,
     CPP,
@@ -172,13 +173,13 @@ export const socialLinks = [
         link: 'https://github.com/Juhyung-L'
     },
     {
+        name: 'Blogger',
+        iconUrl: Blogger,
+        link: 'https://juhyungsprojects.blogspot.com/'
+    },
+    {
         name: 'Linkedin',
         iconUrl: Linkedin,
         link: 'https://www.linkedin.com/in/juhyung-lee-2a2b09192/'
-    },
-    {
-        name: 'Contact',
-        iconUrl: Contact,
-        link: '/contact'
     }
 ];
