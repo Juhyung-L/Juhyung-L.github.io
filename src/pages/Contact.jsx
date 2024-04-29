@@ -43,7 +43,7 @@ const Contact = () => {
     })
   };
   return (
-    <section className='relative flex lg:flex-row flex-col max-container'>
+    <section className='relative flex flex-col max-container'>
       {alert.show && <Alert {...alert}/>}
       <div className='flex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text'>Get in Touch</h1>
@@ -88,11 +88,9 @@ const Contact = () => {
             {isLoading ? 'Sending...' : ' Send Message'}  
           </button>
         </form>
-        <div className='m-20'>
-          <hr className='border-slate-200'/>
-          <Footer />
-        </div>
       </div>
+      <hr className='border-slate-200'/>
+      <Footer />
     </section>
   );
 };
