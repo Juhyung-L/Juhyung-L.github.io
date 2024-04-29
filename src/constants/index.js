@@ -130,39 +130,44 @@ export const experiences = [
 
 export const projects = [
     {
+        theme: 'btn-back-orange',
+        name: 'Dynamic Obstacle Avoidance',
+        description: 'Implemented a global and local path planner for a mobile robot navigating in a 2D map with moving obstacles',
+        github: 'https://github.com/Juhyung-L/dynamic_obstacle_avoidance',
+        blogger: 'https://juhyungsprojects.blogspot.com/2024/04/dynamic-window-approach-for-local-path.html',
+        videoId: 'XEWZgA5ivXk'
+    },
+    {
         theme: 'btn-back-green',
         name: 'RGB-D Visual Odometry',
         description: "Estimating change in a camera's position using SIFT feature matching",
         github: 'https://github.com/Juhyung-L/RGB-D_visual_odometry',
-        blogger: 'https://juhyungsprojects.blogspot.com/2024/01/rgb-d-visual-odometry.html'
+        blogger: 'https://juhyungsprojects.blogspot.com/2024/01/rgb-d-visual-odometry.html',
+        videoId: 'NPGlUDOf-rE'
     },
     {
         theme: 'btn-back-pink',
         name: "Bird's-eye View for Wheelchair",
         description: 'GUI application to help wheelchair users to visualize their surroundings',
         github: 'https://github.com/Juhyung-L/bird_view',
-        blogger: 'https://juhyungsprojects.blogspot.com/2023/12/birds-eye-view-for-wheelchair.html'
-    },
-    {
-        theme: 'btn-back-blue',
-        name: 'PID Motor Control',
-        description: 'Using PID controller to precisely control a DC motor in a wheeled robot',
-        github: '',
-        blogger: 'https://juhyungsprojects.blogspot.com/2023/11/autonomous-mobile-bot-part-3-pid.html'
+        blogger: 'https://juhyungsprojects.blogspot.com/2023/12/birds-eye-view-for-wheelchair.html',
+        videoId: 'UO8QxPaMO_c'
     },
     {
         theme: 'btn-back-black',
         name: 'CUDA-Accelerated Iterative Closest Point Algorithm',
         description: 'Using CUDA and Octree implementation to speed up the Iterative Closest Point Algorithm',
         github: 'https://github.com/Juhyung-L/cuda_icp',
-        blogger: 'https://juhyungsprojects.blogspot.com/2023/10/iterative-closest-point-algorithm-using.html'
+        blogger: 'https://juhyungsprojects.blogspot.com/2023/10/iterative-closest-point-algorithm-using.html',
+        videoId: 'INOZoH7MC9M'
     },
     {
         theme: 'btn-back-red',
         name: 'Autonomous SLAM',
         description: 'Generate waypoints to unexplored regions on the map to automate the mapping of indoor environments',
         github: 'https://github.com/Juhyung-L/autonomous_slam',
-        blogger: 'https://juhyungsprojects.blogspot.com/2023/08/autonomous-mobile-bot-part-1-autonomous.html'
+        blogger: 'https://juhyungsprojects.blogspot.com/2023/08/autonomous-mobile-bot-part-1-autonomous.html',
+        videoId: 'm9cCuDcngxk'
     }
 ];
 

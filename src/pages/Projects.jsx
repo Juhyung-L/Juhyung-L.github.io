@@ -1,22 +1,37 @@
+import {useState} from 'react';
+import Modal from 'react-modal';
 import {projects} from '../constants';
 import {GitHub, Blogger, PersonalProjectColorless} from '../assets/icons';
 import Footer from '../components/Footer';
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+    setIsModalOpen(false);
+  };
+
   return (
-    <section className='max-container'>
+    <section className={`max-container ${isModalOpen ? 'pointer-events-none' : ''}`}>
       <h1 className='head-text'>
         My <span className='blue-gradient_text font-semibold drop-shadow'>Projects</span>
       </h1>
       <div className='flex flex-wrap my-20 gap-16'>
         {projects.map((project) => (
           <div className='lg:w-[400px] w-full' key={project.name}>
-            <div className='block-container w-12 h-12'>
+            <div className='block-container w-12 h-12 cursor-pointer' onClick={() =>openModal(project)}>
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img
                   src={PersonalProjectColorless}
-                  alt="Project Icon"
+                  alt='Project Icon'
                   className='w-1/2 h-1/2 object-contain'/>
               </div>
             </div>
@@ -50,6 +65,31 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+            <Modal
+              isOpen={selectedProject == project}
+              onRequestClose={closeModal}
+              contentLabel='Project Video'
+              className='modal'
+              overlayClassName='modal-overlay'>
+                <div className='m-2'>
+                  <button
+                    className='modal-close-btn'
+                    onClick={closeModal}>
+                    X
+                  </button>
+                </div>
+                <div className='modal-content'>
+                  {project && (
+                    <iframe
+                      width='100%'
+                      height='100%'
+                      src={`https://www.youtube.com/embed/${project.videoId}`}
+                      title={project.name}
+                      allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                      allowFullScreen />
+                  )}
+                </div>
+            </Modal>
           </div>
         ))}
       </div>

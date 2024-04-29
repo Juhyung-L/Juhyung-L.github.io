@@ -30,9 +30,11 @@ const Home = () => {
       </div>
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          An aspiring Robotics Software Engineer interested in programming robots.
-          I am passionate about Robotics because it is an interdiscplinary field that combines Mechanical Engineer, Electrical Enginering, and Computer Science
-          to solve real world problems. I am particularly interested in the Computer Science and programming aspect of Robotics.
+          I am a aspiring software engineer interested in programming electronic devices.
+          I have a special interest in Robotics, but I am open a wide range of fields that deal with electronic devices.
+          I started programming in my junior year at the University of Rochester and ever since then, I have been involved with a variety of different projects where I got to use my programming skills to solve real-world problems.
+          I graduated from college in May of 2023 and I am currently looking for a full-time position.
+          Please check out this website and shoot me a message on Linkedin or through the Contact page if you are interested.
         </p>
       </div>
 
@@ -40,13 +42,16 @@ const Home = () => {
         <h3 className='subhead-text'>My Skills</h3>
         <div className='mt-16 flex flex-wrap gap-12'>
           {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
+            <div className='block-container w-32 h-32' key={skill.name}>
               <div className='btn-back rounded-xl' />
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img 
                   src={skill.imageUrl}
                   alt={skill.name}
                   className='w-1/2 h-1/2 object-contain'/>
+                <p className='text-xs m-1'>
+                  {skill.name}
+                </p>
               </div>
             </div>
           ))}

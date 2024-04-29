@@ -2,6 +2,7 @@ import {useState, useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -87,6 +88,10 @@ const Contact = () => {
             {isLoading ? 'Sending...' : ' Send Message'}  
           </button>
         </form>
+        <div className='m-20'>
+          <hr className='border-slate-200'/>
+          <Footer />
+        </div>
       </div>
     </section>
   );
