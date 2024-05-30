@@ -92,7 +92,7 @@ export const experiences = [
         ],
     },
     {
-        title: 'Software Lead',
+        title: 'Software Developer',
         company_name: 'Capstone Project',
         icon: UniversityOfRochester,
         iconBG: '#10427a',
@@ -104,7 +104,7 @@ export const experiences = [
         ],
     },
     {
-        title: 'Software Engineer in Test',
+        title: 'Test Engineer Intern',
         company_name: 'DEKA Research and Development',
         icon: DEKA,
         iconBG: '#da2728',
@@ -116,7 +116,7 @@ export const experiences = [
         ],
     },
     {
-        title: 'Member of Autonomy Team',
+        title: 'Software Developer',
         company_name: 'Robotics Club',
         icon: UniversityOfRochester,
         iconBG: '#10427a',
