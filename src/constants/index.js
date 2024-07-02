@@ -130,6 +130,14 @@ export const experiences = [
 
 export const projects = [
     {
+        theme: 'btn-back-blue',
+        name: 'BehaviorTree Navigation',
+        description: 'Uses a behavior tree to allow for a mobile robot to perform recovery behavior when stuck while navigating to a goal',
+        github: 'https://github.com/Juhyung-L/behavior_tree_navigation',
+        blogger: 'https://juhyungsprojects.blogspot.com/2024/06/behavior-tree-navigation.html',
+        videoId: 'qKYPtDzhmn0'
+    },
+    {
         theme: 'btn-back-orange',
         name: 'Dynamic Obstacle Avoidance',
         description: 'Implemented a global and local path planner for a mobile robot navigating in a 2D map with moving obstacles',
